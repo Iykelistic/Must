@@ -1,0 +1,562 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    overflow-x: hidden;
+}
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('images/pagetwo-hero.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar .lang-icon {
+    font-size: 1.2rem;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Hero Content */
+.hero-content {
+    margin-bottom: 10%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+   
+}
+
+.hero__content_i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center !important;
+    width: 40vw;
+    margin:  7rem auto;
+}
+
+.hero__content__text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: center !important;
+}
+
+.hero-content p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: center !important;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.hero-content h1 img {
+    height: 3.5rem;
+}
+.hero-content h1 sup {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.hero__content_ii {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.sec-two{
+    padding-top: 5%;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+.sec-two .head{
+   width: 50%;
+   margin: auto;
+}
+.sec-two .head h3{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #00427A;
+}
+.sec-two .head p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #575757;
+}
+.sec-two .second{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 3rem;
+}
+.sec-two .second p{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #00427A;
+}
+.sec-two .second p:first-of-type{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #F58220;
+}
+.sec-two .center{
+    width: 100%;
+    margin-bottom: -1%;
+    margin-top: 1rem ; 
+}
+.sec-two .last{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+}
+.sec-two .last h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+    color: #00427A;
+}
+
+.sec-two .last div{
+    display: flex;
+    gap: 10px;
+}
+.sec-two .last hr{
+     width: 32px;
+     height: 3px;
+     background-color: #575757;
+}
+.sec-two .last .active{
+    background-color: #00427A;
+}
+
+/* SECTION THREE */
+.sec-three{
+    padding: 5%;
+    width: 100vw;
+    background-image: url('images/HighBuilding.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    overflow-x: hidden;
+    opacity: 60%;
+    /* filter: grayscale(100%); */
+}
+.sec-three .head{
+    width: 50%;
+    filter: contrast(4.5);
+    margin-bottom: 5%;
+}
+.sec-three .head h4{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #00427A;
+}
+.sec-three .head h2{
+    color: #2C2C2C;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.sec-three .head p{
+    font-family: Pretendard;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #575757;
+}
+.sec-three .second{
+    margin-bottom: 1.5rem;
+    display: none;
+}
+.sec-three .second h3{
+    color: #2C2C2C;
+}
+.sec-three>div:last-of-type{
+    display: flex;
+    gap: 2rem ;
+    z-index: 3;
+    filter:contrast(3.5);
+}
+.sec-three>div:last-of-type img{
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+    z-index: 3;
+    
+}
+.sec-three>div:last-of-type h3{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.core-value{
+    width: 100vw;
+    padding: 5%;
+}
+.core-value>h4{
+    color: #2C2C2C;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.core-value>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.core-value_first {
+    width: 80%;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.core-value_second {
+    width: 80%;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+}
+/* .core-value>div>div{
+    width: 80%;
+   margin-right: auto;
+   margin-bottom: 3rem;
+   
+} */
+/* .core-value>div>div:nth-child(even){
+    margin-left: 0;
+} */
+.core-value>div>div img{
+    width: 100%;
+    height: 724px;
+    object-fit: cover
+}
+.core-value>div>div h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+    text-align: left;
+    color: #2C2C2C;
+    margin-bottom: 1.5rem;
+}
+.core-value>div>div p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin-bottom: 1rem;
+    width: 90%;
+    color: #575757;
+}
+.core-value .last h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+    text-align: center;
+    color: #00427A;
+}
+.core-value .last div{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+.core-value .last div hr{
+    height: 3px;
+    width: 32px;
+    background-color: #575757;
+}
+.core-value .last div .active{
+    background-color: #00427A;
+}
+
+.hamburger-menu i {
+    font-size: 24px; 
+    color: white; 
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+}
+@media (max-width: 1000px){
+    .hero{
+        height: 840px;
+    }
+    .hero .nav-links{
+        display: none;
+    }
+    .lang-icon{
+        display: none;
+    }
+    .sec-two .second p{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.01em;
+    }
+    .sec-two .second p:first-of-type{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+       
+    .sec-two .last{
+        display: none;
+    }
+    .sec-three .head{
+        width: 100%;
+        margin-bottom: 5%
+    }
+    .sec-three .second{
+        display: block;
+    }
+    .sec-three .second img{
+        width: 100%;
+    }
+    .core-value .last {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .navbar {
+        padding: 39px 5%;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+    .lang-icon{
+        display: none;
+    }
+    .navbar .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .hero-content {
+        margin-bottom: 50%;
+        margin-top: 50%;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+       
+    }
+    .core-value>div>div{
+        width: 100%;
+        margin-left: 0;
+    }
+    .sec-three>div:last-of-type{
+        display: block;
+    }
+    
+ 
+                                                                            
+}
+
+@media (max-width: 500px) {
+    .hero{
+        height: 640px;
+    }
+    
+    .sec-two .head{
+        width: 100%;
+    }
+    .sec-two .head h3{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    .sec-three .head p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+    }
+    .sec-two .second{
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+    .sec-two .second p{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.01em;
+    }
+    .sec-two .second p:first-of-type{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+
+    /* section three */
+    .sec-three .head h4{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        text-align: left;
+    }
+    .sec-three .head h2{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+    }
+    .sec-three .head p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+    }
+    .sec-three>div:last-of-type img{
+        height: 200px;
+    }
+    
+    .sec-three .second h3{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    .sec-three .second p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    /* core values */
+    .core-value>h4{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+    }
+    .core-value>div>div img{
+        width: 100%;
+        height: 200px;
+    }
+    .core-value>div>div h3{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.01em;
+    }
+    .core-value>div>div p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+    }
+
+}

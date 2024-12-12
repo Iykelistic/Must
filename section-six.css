@@ -1,0 +1,179 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+.section-six{
+    background-color: #242424;
+    width: 100vw;
+    min-height: 48vh;
+    position: relative;
+    padding-top: 5%;
+}
+.section-six .head{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    /* margin: 0 2rem; */
+}
+.section-six .head div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.section-six .head .logo{
+    height: 44px;
+}
+.section-six .head img{
+    width: 25vw;
+    /* height: 400px; */
+}
+
+.section-six .head span{
+    color: #F58220;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+    text-align: left;
+}
+
+.last-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    background-color: #f0f0f0; 
+    background-image: url('images/last-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
+.last-section div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.last-section div img{
+    height: 70px;
+    margin: auto;
+}
+
+.last-section div h2{
+    font-family: SpoqaHanSans;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 200px;
+    color: white;
+    text-align: center;
+}
+
+.section__six__pictures {
+    width: 100%;  /* Full width of the container */
+    overflow: hidden;
+    position: relative;
+    height: 500px;  /* Set a specific height or adjust as needed */
+}
+
+.section__six__content {
+    display: flex;
+    animation: slide 30s linear infinite;
+    width: 800%;  /* Adjust based on the number of slides */
+    height: 100%;  /* Use the full height of the container */
+}
+
+
+
+@keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+
+.section__six__pictures_i {
+    display: none;
+}
+
+.section__six__content_i {
+    display: none;
+}
+
+#shop__img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#flask__img {
+    height: 397px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    object-fit: cover;
+    width: 369px;
+}
+
+@media (max-width:500px) {
+    .last-section div h2{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -0.01em;
+        text-align: left;
+    }
+    .last-section div img{
+        height: 28px;
+    }
+
+    .section-six{
+        height: 58vh;
+    }
+
+    .section__six__pictures{
+        height: 300px !important;
+    }
+
+    #section__six__logo__holder {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+
+    #section__six__text {
+        font-size: 16px;
+    }
+
+    #section__six__text_i {
+        font-size: 16px;
+    }
+
+    .section__six__pictures_i {
+        display: flex;
+    }
+    
+    
+  
+    
+}
+
+
+@media (min-width: 800px) {
+    .section__six__content {
+        display: flex !important;
+    }
+
+    .section__six__pictures {
+        display: flex !important;
+    }
+
+}

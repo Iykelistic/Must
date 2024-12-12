@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    overflow-x: hidden;
+}
+.section-four{
+    background-color: #242424;
+    padding: 10% 5%;
+    max-width:  100vw;
+    color: #fff;
+    margin-top: -26px;
+}
+.section-four>h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.014em;
+    text-align: left;
+}
+.section-four>p{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+.section-four>p span{
+    color: #F58220;
+}
+.section-four>div{
+    align-items: flex-start;
+    display: flex;
+    gap: 1.5rem;
+}
+.section-four>div div h4{
+    color: #fff;
+    font-family: SpoqaHanSans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin: 1.5rem 0;
+}
+.section-four>div div p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
+.section-four>div div img{
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+.section-four .non-active{
+    margin-top: 4rem;
+}
+
+@media (max-width: 800px) {
+    .section-four>div{
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+  .section-four>p{
+    font-size: 20px;
+    width: 75%;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 5rem;
+  }
+  .section-four h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+.section-four h3 img{
+    height: 21px;
+}
+.section-four p span{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.section-four>div div h4{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+}
+.section-four>div div p{
+    font-family: SpoqaHanSans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #BBBBBB;
+}
+}
+@media (max-width: 400px){
+    .section-four>p{
+        width: 80%;
+    }
+}
